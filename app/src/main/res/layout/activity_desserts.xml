@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Desserts"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/textintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Droid Desserts"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/choose_dessert"
+        android:layout_below="@+id/textintro"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a dessert" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/donut"
+        android:layout_width="200dp"
+        app:shapeAppearanceOverlay="@style/RoundedImageShape"
+        android:layout_height="200dp"
+        android:layout_below="@+id/choose_dessert"
+        android:layout_marginTop="0dp"
+        android:contentDescription="Donuts are glazed and sprinkled with candy"
+        android:onClick="showDonutOrder"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_dessert"
+        android:layout_toRightOf="@+id/donut"
+        android:padding="35dp"
+        android:textSize="16sp"
+        android:text="Dounts are glazed and sprinkled with candy" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ice_cream"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:layout_below="@id/donut"
+        android:contentDescription="Ice cream sandwiches have chocolate wafers and vanilla filling."
+        app:srcCompat="@drawable/download2"
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/RoundedImageShape"
+        android:onClick="showIceCreamOrder"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donut"
+        android:layout_toRightOf="@+id/ice_cream"
+        android:textSize="16sp"
+        android:padding="35dp"
+        android:text="ice cream sandwiches have chocolate wafers and vanilla filling" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/froyo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:layout_below="@+id/ice_cream"
+        app:shapeAppearanceOverlay="@style/RoundedImageShape"
+        android:contentDescription="FroYo is premium self-serve frozen yogurt."
+        app:srcCompat="@drawable/download3"
+        android:scaleType="fitXY"
+        android:onClick="showFroyoOrder"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ice_cream"
+        android:layout_toRightOf="@+id/froyo"
+        android:textSize="16sp"
+        android:padding="35dp"
+        android:text="FroYo is premium self-serve frozen yogurt."
+        />
+
+</RelativeLayout>

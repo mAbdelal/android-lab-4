@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Define the rounded shape style -->
+        <style name="RoundedImageShape">
+            <!-- Defines the shape as rounded (circle or with rounded corners) -->
+            <item name="cornerFamily">rounded</item>
+            <!-- 50% corner size for a fully circular image -->
+            <item name="cornerSize">50%</item>
+        </style>
+
+
+</resources>
