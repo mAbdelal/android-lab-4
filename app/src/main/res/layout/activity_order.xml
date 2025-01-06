@@ -8,6 +8,16 @@
     tools:context=".OrderActivity"
     android:layoutDirection="ltr">
 
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:title="Droid Cafe"
+        android:titleTextColor="@color/white"/>
+
+
     <TextView
         android:id="@+id/order_intro_text"
         android:layout_width="wrap_content"
@@ -15,6 +25,7 @@
         android:text="Choose a delivery method:"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="6dp"
+        android:layout_below="@+id/toolbar"
         android:textSize="18sp"
         />
     <RadioGroup

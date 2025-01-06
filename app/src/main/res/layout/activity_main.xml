@@ -8,6 +8,26 @@
     tools:context=".MainActivity"
     android:layoutDirection="ltr">
 
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:title="Droid Cafe"
+        android:titleTextColor="@color/white">
+    </Toolbar>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="40dp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:text="Majdi abdelal" />
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -25,6 +45,7 @@
         android:layout_height="wrap_content"
         android:text="Tap to test the alert:"
         android:textSize="30dp"
+        android:layout_below="@+id/textView"
         android:layout_margin="40dp"
         android:layout_centerHorizontal="true"/>
 
@@ -32,14 +53,14 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:text="Order screen"
         android:layout_alignParentBottom="true"/>
     <Button
         android:id="@+id/desserts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:text="desserts screen"
         android:layout_above="@id/button2"/>
 
